@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[linear-gradient(135deg,#080808,#07071d)] text-white font-sans">
+    <div class="main-container max-w-7xl">
+                <nav  class="bg-[linear-gradient(135deg,#080808,#07071d)] h-24 px-6 py-4 flex justify-between items-center border-b-1 border-white/15 max-w-7xl w-full fixed  z-20">
+                <div class="text-2xl font-bold text-shadow-lg">Roham</div>
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="#" class="hover:text-gray-400 text-shadow-md">Home</a></li>
+                    <li><a href="#" class="hover:text-gray-400 text-shadow-md">Products</a></li>
+                    <li><a href="#" class="hover:text-gray-400 text-shadow-md">Pricing</a></li>
+                    <li><a href="#" class="hover:text-gray-400 text-shadow-md">Contact</a></li>
+                </ul>
+                <button id="btn" class="md:hidden focus:outline-none text-2xl">☰</button>
+            </nav>
+
+            <ul id="mobile-menu" class="bg-[linear-gradient(135deg,#080808,#07071d)] flex-col items-left p-6 space-y-5 transtion tt z-10 w-full fixed">
+                    <li><a href="#" class="block">Home</a></li>
+                    <li><a href="#" class="block">Products</a></li>
+                    <li><a href="#" class="block">Pricing</a></li>
+                    <li><a href="#" class="block">Contact</a></li>
+            </ul>
+
+  <section class="hero">
+            <div class="left-hero">    
+                <h1>Crafting Modern Web Experiences</h1>
+                <p>Shaping digital spaces where elegance meets functionality, creating interfaces that feel effortless, refined, and truly modern.</p>
+                <p>Clean UI, smooth interactions, and luxury design — by Roham.</p>
+                <div>
+                    <button class="btn">Get Started</button>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+          
+           <div class="right-hero"> 
+            <img src="hero-img.png" alt="hero-img">
+           </div>
+    </section>
+
+<section class="product-section">
+          <h2 class="text-3xl font-bold text-center mb-8">Our Products</h2>
+    <div class="grid md:grid-cols-3 gap-8  mx-auto">   
+    <div class="product-card">
+        <img src="p1.jpg" alt="Product Image">
+        <h2>Product Name</h2>
+        <p>$19.99</p>
+        <button>Add to Cart</button>
+    </div>
+            <div class="product-card">
+        <img src="p2.jpg" alt="Product Image">
+        <h2>Product Name</h2>
+        <p>$19.99</p>
+        <button>Add to Cart</button>
+    </div>
+            <div class="product-card">
+        <img src="p3.jpg" alt="Product Image">
+        <h2>Product Name</h2>
+        <p>$19.99</p>
+        <button>Add to Cart</button>
+    </div>
+</div> 
+</section>
+
+
+   <section class=" mt-15 py-12 ">
+    <div class=" mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10">Choose Your Plan</h2>
+
+      <div class="grid md:grid-cols-3 gap-8  mx-auto">
+
+        <!-- Basic Plan -->
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:scale-105 transition">
+          <h3 class="text-xl font-semibold mb-4 text-gray-800">Basic</h3>
+          <p class="text-4xl font-bold mb-4 text-gray-800">$9<span class="text-lg text-gray-800">/mo</span></p>
+          <ul class="mb-6 space-y-2 text-gray-600">
+            <li>✔️ 1 Project</li>
+            <li>✔️ Basic Support</li>
+            <li>✔️ Community Access</li>
+          </ul>
+          <a href="#" class="bg-black text-white px-10 py-3 rounded-sm  hover:bg-gray-700">Get Started</a>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center border-4 border-indigo-500 hover:scale-105 transition">
+          <h3 class="text-xl font-semibold mb-4 text-gray-800">Pro</h3>
+          <p class="text-4xl font-bold mb-4 text-gray-800">$29<span class="text-lg text-gray-800">/mo</span></p>
+          <ul class="mb-6 space-y-2 text-gray-600">
+            <li>✔️ Unlimited Projects</li>
+            <li>✔️ Priority Support</li>
+            <li>✔️ Advanced Features</li>
+          </ul>
+          <a href="#" class="bg-indigo-600 text-white px-10 py-3 rounded-sm  hover:bg-indigo-500">Get Started</a>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center hover:scale-105 transition">
+          <h3 class="text-xl font-semibold mb-4 text-gray-800">Premium</h3>
+          <p class="text-4xl font-bold mb-4 text-gray-800">$49<span class="text-lg text-gray-800">/mo</span></p>
+          <ul class="mb-6 space-y-2 text-gray-600">
+            <li>✔️ Unlimited Projects</li>
+            <li>✔️ Dedicated Support</li>
+            <li>✔️ All Features</li>
+          </ul>
+          <a href="#" class="bg-black text-white px-10 py-3 rounded-sm hover:bg-gray-700">Get Started</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+      <footer class="text-gray-300 py-12 w-full border-t border-gray-800 mt-15">
+        
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-20 ">
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Roham 💻</h2>
+                <p class="text-sm leading-relaxed">Luxury design, modern web experiences, and user-centric solutions crafted with precision</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Quick Links 🔗</h3>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Services</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Pricing</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+           
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Contact Info 📞</h3>
+                <ul class="space-y-3">
+                    <li>123 Design Street, Creative</li>
+                    <li>info@roham.com</li>
+                    <li>+1 (555) 123-4567</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Follow Us 📱</h3>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">GitHub</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Telegram</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Instagram</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-sm text-gray-500">&copy; 2024 Roham. All rights reserved.</p>
+            </div>
+    </footer>
+
+</div>
+
+           <script>
+                const btn =document.getElementById('btn')
+                btn.addEventListener('click', function() {
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    mobileMenu.classList.toggle('show');
+                });
+            </script>
+</body>
+</html>
